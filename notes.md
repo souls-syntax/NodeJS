@@ -55,3 +55,32 @@ require('./Lecture1/node_intro/app.js')
 ```
 
 By default we get empty object as value when we require something
+
+---
+
+When you need to require the folder then it's must to have a index.js in that folder. It basically is the entry point to the package.
+Kinda like how it is main() function in C, you import the file in index of package and then export from there so you that is how you do it.
+
+
+```javascript
+// File: ./myPackage/index.js
+module.exports = {
+  moduleA: require('./moduleA'),
+  moduleB: require('./moduleB')
+};
+
+// Now, in another file where you want to use the package...
+const myPackage = require('./myPackage');
+console.log(`${myPackage.moduleA.myVar} ${myPackage.moduleB.myVar}`);  // prints: Hello World
+```
+In this example, `index.js` is at the root of a package named `myPackage` that exports all other modules
+(`moduleA` and `moduleB`) from it. This way, you can import the whole package with one line instead of requiring
+each module separately, keeping your code more readable and organized.
+
+---
+
+- You don't have prompt function in node hence you have to provide input using argv only.
+
+
+
+
