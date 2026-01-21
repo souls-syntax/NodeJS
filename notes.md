@@ -81,6 +81,17 @@ each module separately, keeping your code more readable and organized.
 
 - You don't have prompt function in node hence you have to provide input using argv only.
 
+```JS
+let input = console.log(process.argv.slice(2));
+```
 
+# Day 3
+
+## Require file, folder.
+
+There are two types of modules
+
+1. CommonJS => NodeJS
+2. ESmodule => React
 
 
