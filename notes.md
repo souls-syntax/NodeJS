@@ -94,4 +94,13 @@ There are two types of modules
 1. CommonJS => NodeJS
 2. ESmodule => React
 
+# Day 4
 
+## URL 
+: UNIFIED RESOURCE ALLOCATOR
+
+GET
+POST
+PUT
+PATCH
+DELETE
