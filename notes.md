@@ -104,3 +104,15 @@ POST
 PUT
 PATCH
 DELETE
+
+### 
+```JS
+console.log(process.cwd());
+console.log(__dirname);
+```
+
+* cwd is there for where you are in and __dirname is there for where the process is running from.
+
+
+
+
