@@ -113,6 +113,15 @@ console.log(__dirname);
 
 * cwd is there for where you are in and __dirname is there for where the process is running from.
 
+```js
+path.join('hello','the','safe','way','to','join','path');
+```
 
+# Day 5
+
+## Server
+= Listen to your request and gives out response.
+
+Node’s HTTP module is enough to build a full server, but it’s low-level and verbose. Express.js sits on top of it and provides routing and middleware abstractions, similar to how chi wraps Go’s net/http.
 
 
